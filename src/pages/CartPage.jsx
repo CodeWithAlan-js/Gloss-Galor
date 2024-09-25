@@ -1,4 +1,3 @@
-import React from "react";
 import NavBar from "../components/navbar";
 import { useCartContext } from "../context/CartContext";
 import QuantitySelector from "../components/QuantitySelector";
@@ -61,8 +60,11 @@ const CartPage = () => {
             <p className="text-xl font-bold">{calculateTotal().toFixed(2)} $</p>
           </div>
           <div className="">
-            <Button ripple={false}
-        fullWidth={true} className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none hover:bg-gradient-to-br from-pink-50 to-cyan-50 focus:scale-105 focus:shadow-none active:scale-100 hover:animate-bounce">
+            <Button
+              ripple={false}
+              fullWidth={true}
+              className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none hover:bg-gradient-to-br from-pink-50 to-cyan-50 focus:scale-105 focus:shadow-none active:scale-100 hover:animate-bounce"
+            >
               Proceed To Payment
             </Button>
           </div>

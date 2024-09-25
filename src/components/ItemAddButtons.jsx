@@ -1,9 +1,8 @@
 import { Button } from "@material-tailwind/react";
 import { useCartContext } from "../context/CartContext";
-import { useParams } from "react-router-dom";
 
 const ItemAddButtons = ({ productId, productPrice }) => {
-  const { handleCartCount, handleAnimation,addToCart } = useCartContext();
+  const { handleCartCount, handleAnimation, addToCart } = useCartContext();
 
   const handleAddToCart = () => {
     addToCart(productId, productPrice);
@@ -28,4 +27,3 @@ const ItemAddButtons = ({ productId, productPrice }) => {
 };
 
 export default ItemAddButtons;
-

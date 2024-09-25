@@ -29,7 +29,7 @@ export const CartProvider = ({ children }) => {
   useEffect(() => {
     handleCartCount();
     saveCartToLocalStorage(cartItems);
-  }, [cartItems]);
+  }, [cartItems, handleCartCount]);
 
   const removeFromCart = (productId) => {
     setCartItems((prevItems) =>
