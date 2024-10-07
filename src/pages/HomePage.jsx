@@ -7,7 +7,7 @@ const HomePage = () => {
       <header>
         <NavBar />
       </header>
-      <main className="flex justify-center bg-gradient-to-br from-pink-50 to-cyan-50">
+      <main className="flex justify-center bg-gradient-to-br from-pink-50 to-cyan-50 ">
         <Cards />
       </main>
       <footer></footer>

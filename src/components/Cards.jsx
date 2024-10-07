@@ -59,7 +59,7 @@ const productData = [
 
 const Cards = () => {
   return (
-    <div className="flex flex-wrap justify-evenly gap-10 relative z-10 py-10 ml-32 mr-32">
+    <div className="flex flex-wrap justify-evenly gap-10 relative z-10 py-10 ml-32 mr-32 ">
       {productData.map((product) => (
         <ProductCard
           key={product.productId}
