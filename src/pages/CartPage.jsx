@@ -1,4 +1,4 @@
-import NavBar from "../components/navbar";
+import NavBar from "../components/NavBar";
 import { useCartContext } from "../context/CartContext";
 import QuantitySelector from "../components/QuantitySelector";
 import { Button } from "@material-tailwind/react";
