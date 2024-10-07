@@ -25,6 +25,17 @@ export const CartProvider = ({ children }) => {
       ]);
     }
   };
+  const handleCartCount = () => {
+    if (cartItems.length > 0) {
+      const totalQuantity = cartItems.reduce(
+        (acc, item) => acc + item.quantity,
+        0
+      );
+      setCartCount(totalQuantity);
+    } else {
+      setCartCount(0);
+    }
+  };
 
   useEffect(() => {
     handleCartCount();
@@ -41,18 +52,6 @@ export const CartProvider = ({ children }) => {
         )
         .filter((item) => item.quantity > 0)
     );
-  };
-
-  const handleCartCount = () => {
-    if (cartItems.length > 0) {
-      const totalQuantity = cartItems.reduce(
-        (acc, item) => acc + item.quantity,
-        0
-      );
-      setCartCount(totalQuantity);
-    } else {
-      setCartCount(0);
-    }
   };
 
   const handleAnimation = () => {
